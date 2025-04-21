@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <title>Pasteboard</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: #f9f9f9;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 40px;
         }
+        .container {
+            max-width: 700px;
+        }
         img {
+            display: block;
+            margin: 0 auto 20px auto; /* centraliza a imagem */
             width: 120px;
             height: 120px;
-            margin-bottom: 20px;
         }
         h1 {
             font-size: 28px;
             margin-bottom: 10px;
+            text-align: center;
         }
         p {
             font-size: 16px;
-            max-width: 600px;
-            margin: 0 auto 10px auto;
+            text-align: justify;
             line-height: 1.6;
+            margin-bottom: 15px;
         }
         .contact {
             margin-top: 40px;
@@ -41,21 +53,23 @@
 </head>
 <body>
 
-    <img src="icon.png" alt="Ícone do Pasteboard">
-    <h1>Pasteboard – Tudo o que você copia, salvo para você.</h1>
-    <p>O Pasteboard é um app simples e direto: tudo o que você copia fica automaticamente registrado. Perfeito para quem precisa de agilidade e organização sem complicação.</p>
-    <p><strong>Funciona assim:</strong></p>
-    <p>Copiou? O Pasteboard guarda.<br>
-    Toque em qualquer item para copiar de novo.<br>
-    Apague uma célula ou limpe tudo com um toque.<br>
-    Não é possível editar os textos — o foco é guardar exatamente o que foi copiado.</p>
-    <p>Sem distrações. Sem confusão. Só o essencial: o que você copiou.</p>
+    <div class="container">
+        <img src="icon.png" alt="Ícone do Pasteboard">
+        <h1>Pasteboard – Tudo o que você copia, salvo para você.</h1>
+        <p>O Pasteboard é um app simples e direto: tudo o que você copia fica automaticamente registrado. Perfeito para quem precisa de agilidade e organização sem complicação.</p>
+        <p><strong>Funciona assim:</strong></p>
+        <p>Copiou? O Pasteboard guarda.<br>
+        Toque em qualquer item para copiar de novo.<br>
+        Apague uma célula ou limpe tudo com um toque.<br>
+        Não é possível editar os textos — o foco é guardar exatamente o que foi copiado.</p>
+        <p>Sem distrações. Sem confusão. Só o essencial: o que você copiou.</p>
 
-    <div class="contact">
-        <p>📩 Para mais informações ou suporte:<br>
-        <a href="mailto:julianoctvaz@gmail.com">julianoctvaz@gmail.com</a></p>
-        <div class="privacy">
-            🔐 <a href="privacidade.html">Política de Privacidade</a>
+        <div class="contact">
+            <p>📩 Para mais informações ou suporte:<br>
+            <a href="mailto:julianoctvaz@gmail.com">julianoctvaz@gmail.com</a></p>
+            <div class="privacy">
+                🔐 <a href="privacidade.html">Política de Privacidade</a>
+            </div>
         </div>
     </div>
 
